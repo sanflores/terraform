@@ -12,7 +12,7 @@ Terraform v0.15 is a major release and so it includes some small changes in
 behavior that you may need to consider when upgrading. This guide is intended
 to help with that process.
 
-The goal of this guide is to cover the most common upgrade concerns and
+The goal of this guide is to cover the most common upgrade pconcerns and
 issues that would benefit from more explanation and background. The exhaustive
 list of changes will always be
 [the Terraform Changelog](https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md).
@@ -203,7 +203,7 @@ upgrading to Terraform v0.15:
     ```
 
     If you need to update a module which was using the `map` function, you
-    can get the same result by replacing `map(...)` with `tomap([...])`.
+    can get the same result by replacing `map(...)` with `tomap({...})`.
     For example:
 
     ```diff
